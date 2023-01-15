@@ -3,39 +3,12 @@ package ua.hillel.HomeTask3;
 public class PrintMonth {
     // static int month = 9;
     public static void main(String[] args){
-        int month = 2;
-        if (month == 1) {
-            System.out.println("JAN");
-        } else if (month == 2) {
-            System.out.println("FEB");
-        } else if (month == 3) {
-            System.out.println("MARCH");
-        } else if (month == 4) {
-            System.out.println("APRIL");
-        } else if (month == 5) {
-            System.out.println("MAY");
-        }else if (month == 6) {
-            System.out.println("JUNE");
-        }else if (month == 7) {
-            System.out.println("JULY");
-        }else if (month == 8) {
-            System.out.println("AUG");
-        }else if (month == 9) {
-            System.out.println("SEP");
-        }else if (month == 10) {
-            System.out.println("OCT");
-        }else if (month == 11) {
-            System.out.println("NOV");
-        }else if (month == 12) {
-            System.out.println("DEC");
-        }else {
-            System.out.println("Not a valid month");
-        }
-        System.out.println(printMonthInWord(9));
+
+        System.out.println(printMonthInWordSwitch(10));
+        System.out.println(printMonthInWordIfElse(8));
     }
-// The second method solution
-// Why second method is inactive?
-    public static String printMonthInWord(int month2){
+
+    public static String printMonthInWordSwitch(int month2){
 
         String month2String = "";
         switch (month2) {
@@ -81,6 +54,38 @@ public class PrintMonth {
 
         }
         return month2String;
+    }
+    public static String printMonthInWordIfElse (int month){
+
+        String newMonth = "";
+        if (month == 1) {
+            System.out.println("JAN");
+        } else if (month == 2) {
+            System.out.println("FEB");
+        } else if (month == 3) {
+            System.out.println("MARCH");
+        } else if (month == 4) {
+            System.out.println("APRIL");
+        } else if (month == 5) {
+            System.out.println("MAY");
+        }else if (month == 6) {
+            System.out.println("JUNE");
+        }else if (month == 7) {
+            System.out.println("JULY");
+        }else if (month == 8) {
+            System.out.println("AUG");
+        }else if (month == 9) {
+            System.out.println("SEP");
+        }else if (month == 10) {
+            System.out.println("OCT");
+        }else if (month == 11) {
+            System.out.println("NOV");
+        }else if (month == 12) {
+            System.out.println("DEC");
+        }else {
+            System.out.println("Not a valid month");
+        }
+        return newMonth;
     }
 }
 
